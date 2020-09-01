@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture ISAM5430.FA20.Class2", "Lecture ISAM5430.FA20.Class2\Lecture ISAM5430.FA20.Class2.csproj", "{AE1AEDF4-A5A0-4DF5-B622-7863A2681D3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentGrade_ If else", "Lecture ISAM5430.FA20.Class2\StudentGrade_ If else.csproj", "{AE1AEDF4-A5A0-4DF5-B622-7863A2681D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentGrade1", "StudentGrade1\StudentGrade1.csproj", "{A9138AEC-D03D-4A02-B177-D1DC55B391AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentGrade_ If else if else", "StudentGrade1\StudentGrade_ If else if else.csproj", "{A9138AEC-D03D-4A02-B177-D1DC55B391AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentGrade2_Switch", "StudentGrade2\StudentGrade2_Switch.csproj", "{6278A35D-026B-457E-A816-B100B57E1D89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentGrade2_Switch case", "StudentGrade2\StudentGrade2_Switch case.csproj", "{6278A35D-026B-457E-A816-B100B57E1D89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

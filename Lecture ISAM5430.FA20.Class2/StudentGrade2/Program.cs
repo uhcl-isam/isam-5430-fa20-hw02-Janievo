@@ -25,7 +25,9 @@ namespace StudentGrade2
                 case 7:
                     WriteLine("C");
                     break;
-
+                default:
+                    WriteLine("F");
+                    break;
             }
         }
     }
