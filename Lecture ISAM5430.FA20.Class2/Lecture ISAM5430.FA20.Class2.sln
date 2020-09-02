@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentGrade_ If else if el
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentGrade2_Switch case", "StudentGrade2\StudentGrade2_Switch case.csproj", "{6278A35D-026B-457E-A816-B100B57E1D89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentGrade3", "StudentGrade3\StudentGrade3.csproj", "{298F9E2B-DA71-4DFF-BE58-37170A7B3750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentGrade4", "StudentGrade4\StudentGrade4.csproj", "{478C0BA9-4465-4A05-A88B-FF2CC3F3BD68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6278A35D-026B-457E-A816-B100B57E1D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6278A35D-026B-457E-A816-B100B57E1D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6278A35D-026B-457E-A816-B100B57E1D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298F9E2B-DA71-4DFF-BE58-37170A7B3750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298F9E2B-DA71-4DFF-BE58-37170A7B3750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298F9E2B-DA71-4DFF-BE58-37170A7B3750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298F9E2B-DA71-4DFF-BE58-37170A7B3750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{478C0BA9-4465-4A05-A88B-FF2CC3F3BD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478C0BA9-4465-4A05-A88B-FF2CC3F3BD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478C0BA9-4465-4A05-A88B-FF2CC3F3BD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478C0BA9-4465-4A05-A88B-FF2CC3F3BD68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
