@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.Tracing;
+
 namespace CSharp.Assignments.Loop1
 {
     /// <summary>
@@ -22,7 +24,15 @@ namespace CSharp.Assignments.Loop1
     {
         public static void Main()
         {
+            Console.WriteLine("Enter a counter: ");
+            int counter = int.Parse(Console.ReadLine());
             // get first number and assign it to variable largest
+            Console.WriteLine("Enter the number of units: ");
+            for (i = 0; i <= counter, i++ )
+            {
+                int num = int.Parse(Console.ReadLine());
+            }
+
             // write your codes here
         }
     }
