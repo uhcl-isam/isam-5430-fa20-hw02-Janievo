@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace CSharp.Assignments.Loop1
@@ -33,7 +35,16 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static int CaughtSpeeding(int speed, bool birthday)
         {
-            throw new NotImplementedException();
+            if ((speed <= 60) || (birthday && speed <= 65))
+            {
+                return 0;
+            }
+            else if ((speed >= 61 && speed <= 80) || (birthday && (speed >= 66 && speed <= 85)))
+            {
+                return 1;
+
+            }
+            return 2;  
         }
 
         /// <summary>
@@ -44,7 +55,16 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool Love6(int a, int b)
         {
-            throw new NotImplementedException();
+            if (a == 6 || b == 6 ||(a+b == 6) ||(a-b ==6))
+            {
+                return true;
+            }
+            else if ( a==6 && b==6)
+            {
+                return false;
+            }
+            else
+                return false;
         }
 
         /// <summary>
@@ -54,7 +74,14 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool More20(int num)
         {
-            throw new NotImplementedException();
+            if( num % 20 < 2 || num % 20 <1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -75,7 +102,23 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static int TeaParty(int tea, int candy)
         {
-            throw new NotImplementedException();
+            if (tea >= 5 && candy >= 5)
+            {
+                if ((tea == candy * 2) || (candy == tea * 2))
+                {
+                    return 2;
+                }
+                return 1;
+            }
+            else if (tea < 5 || candy < 5)
+            {
+                return 0;
+            }
+            else
+            {
+                return 2;
+            }
+
         }
 
         /// <summary>
@@ -86,7 +129,14 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool SquirrelPlay(int temperature, bool isSummer)
         {
-            throw new NotImplementedException();
+            if ((isSummer && temperature <= 100 && temperature >= 60) || (temperature >= 60 && temperature <= 90))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -103,7 +153,28 @@ namespace CSharp.Assignments.Loop1
         /// <returns>either: "7:00" or "10:00" or "off"</returns>
         public static string AlarmClock(DayOfWeek dayOfWeek, bool vacation)
         {
-            throw new NotImplementedException();
+            if(vacation == false)
+            {
+                if ((int) dayOfWeek >=1 && (int) dayOfWeek <= 5)
+                {
+                    return "7:00";
+                }
+                else
+                {
+                    return "10:00";
+                }
+            }
+            if (vacation == true)
+            {
+                if ((int)dayOfWeek >= 1 && (int)dayOfWeek <= 5)
+                {
+                    return "10:00";
+                }
+                else
+                {
+                    return "off";
+                }
+            }
         }
 
 
@@ -116,9 +187,27 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool AnswerCell(bool isMorning, bool isMom, bool isAsleep)
         {
-            throw new NotImplementedException();
+            if (isAsleep)
+            {
+                return false;
+            }
+            else if (isMorning)
+            {
+                if (isMom)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return true;
+            }
+           
         }
-
 
         /// <summary>
         /// A hilly number is defined to be a number with all the left digits in an ascending order, 
