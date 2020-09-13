@@ -28,7 +28,7 @@ namespace CSharp.Assignments.Loop1
             int counter = int.Parse(Console.ReadLine());
             // get first number and assign it to variable largest
             Console.WriteLine("Enter the number of units: ");
-            for (i = 0; i <= counter, i++ )
+            for (int i = 0; i <= counter; i++ )
             {
                 int num = int.Parse(Console.ReadLine());
             }

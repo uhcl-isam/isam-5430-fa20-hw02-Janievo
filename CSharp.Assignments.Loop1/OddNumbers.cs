@@ -14,23 +14,23 @@ namespace CSharp.Assignments.Loop1
         {
 
             // Codes to enter start
-            Console.Error.WriteLine("Enter the starting number");
+            Console.Error.WriteLine("Enter the starting number: ");
             int num1 = int.Parse(Console.ReadLine());
             // Codes to enter end.
-            Console.Error.WriteLine("Enter the ending number");
+            Console.Error.WriteLine("Enter the ending number: ");
             int num2 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"The odd integers between {num1} and {num2}: ");
-            for (i = num1; i <= num2; i++)
+            Console.Error.WriteLine($"The odd integers between {num1} and {num2}: ");
+            
+            for (int i =  num1 ; i <= num2; i++)
             {
-                if (i > 0)
+                if (i%2 !=0)
                 {
-                    if ( i %2 !=0)
-                    {
-                        Console.WriteLine(i);
-                    }
+                    Console.WriteLine(i);
                 }
             }
+         
+           
         }
     }
 }

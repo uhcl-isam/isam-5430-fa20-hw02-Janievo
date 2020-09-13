@@ -42,7 +42,6 @@ namespace CSharp.Assignments.Loop1
             else if ((speed >= 61 && speed <= 80) || (birthday && (speed >= 66 && speed <= 85)))
             {
                 return 1;
-
             }
             return 2;  
         }
@@ -55,7 +54,11 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool Love6(int a, int b)
         {
-            if (a == 6 || b == 6 ||(a+b == 6) ||(a-b ==6))
+            if (a == 6 || b == 6 )
+            {
+                return true;
+            }
+            else if ( ( a- b == 6) || (a+b == 6) ||(b-a ==6))
             {
                 return true;
             }
@@ -63,8 +66,7 @@ namespace CSharp.Assignments.Loop1
             {
                 return false;
             }
-            else
-                return false;
+            return false;
         }
 
         /// <summary>
@@ -74,14 +76,11 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool More20(int num)
         {
-            if( num % 20 < 2 || num % 20 <1)
+            if( (num % 20 == 2) || (num % 20 == 1))
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;  
         }
 
         /// <summary>
@@ -91,7 +90,11 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool NearTen(int num)
         {
-            throw new NotImplementedException();
+            if((num%10 <=2) || (num%10 >=8))
+            {
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -114,11 +117,7 @@ namespace CSharp.Assignments.Loop1
             {
                 return 0;
             }
-            else
-            {
-                return 2;
-            }
-
+            return 2;  
         }
 
         /// <summary>
@@ -133,10 +132,7 @@ namespace CSharp.Assignments.Loop1
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         /// <summary>
@@ -159,10 +155,7 @@ namespace CSharp.Assignments.Loop1
                 {
                     return "7:00";
                 }
-                else
-                {
-                    return "10:00";
-                }
+                return "10:00";
             }
             if (vacation == true)
             {
@@ -170,11 +163,9 @@ namespace CSharp.Assignments.Loop1
                 {
                     return "10:00";
                 }
-                else
-                {
-                    return "off";
-                }
-            }
+                return "off";       
+             }
+            return "7:00";
         }
 
 
@@ -197,16 +188,9 @@ namespace CSharp.Assignments.Loop1
                 {
                     return true;
                 }
-                else
-                {
-                    return false;
-                }
+                return false;
             }
-            else
-            {
-                return true;
-            }
-           
+            return true;
         }
 
         /// <summary>
@@ -231,7 +215,20 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool CloseFar(int a, int b, int c)
         {
-            throw new NotImplementedException();
+            int diff1 = Math.Abs(a - b);
+            int diff2 = Math.Abs(a - c);
+            int diff3 = Math.Abs(b - c);
+            if ((diff1 <=1 ) && ( diff2>=2) && (diff3>=2))
+            {
+                return true;
+            }
+            else if ((diff2 <= 1) && (diff1 >= 2) && (diff3 >= 2))
+            {
+                return true;
+            }
+            return false;
+
+
         }
     }
 }
