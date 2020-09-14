@@ -17,6 +17,9 @@ namespace CSharp.Assignments.Loop1
     {
         public static void Main()
         {
+            Console.Write("Enter a nine digits interger: ");
+            int num = int.Parse(Console.ReadLine());
+
             // enter sentinel inputs
             // then check the palindrome only once.
         }
