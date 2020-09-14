@@ -218,17 +218,19 @@ namespace CSharp.Assignments.Loop1
             int diff1 = Math.Abs(a - b);
             int diff2 = Math.Abs(a - c);
             int diff3 = Math.Abs(b - c);
-            if ((diff1 <=1 ) && ( diff2>=2) && (diff3>=2))
+            if (diff1 <= 1 && diff2 >1 && diff3 >1)
             {
                 return true;
             }
-            else if ((diff2 <= 1) && (diff1 >= 2) && (diff3 >= 2))
+            else if (diff2 <= 1 && diff1 > 1 && diff1 > 1)
+            {
+                return true;
+            }
+            else if (diff3 <= 1 && diff1 > 1 && diff1 > 1)
             {
                 return true;
             }
             return false;
-
-
         }
     }
 }

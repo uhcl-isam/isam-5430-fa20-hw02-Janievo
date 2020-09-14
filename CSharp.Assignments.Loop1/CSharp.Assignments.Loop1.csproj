@@ -6,4 +6,12 @@
     <StartupObject>CSharp.Assignments.Loop1.CountClumps</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="OddNumbers.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="OddNumbers.cs" />
+  </ItemGroup>
+
 </Project>
