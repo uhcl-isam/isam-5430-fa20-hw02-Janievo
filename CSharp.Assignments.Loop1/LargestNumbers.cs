@@ -24,16 +24,42 @@ namespace CSharp.Assignments.Loop1
     {
         public static void Main()
         {
-            Console.WriteLine("Enter a counter: ");
-            int counter = int.Parse(Console.ReadLine());
-            // get first number and assign it to variable largest
-            Console.WriteLine("Enter the number of units: ");
-            for (int i = 0; i <= counter; i++ )
-            {
-                int num = int.Parse(Console.ReadLine());
-            }
+            int largest;
+            int largest2 = 0;
 
-            // write your codes here
+            Console.Error.Write("Enter the counter: ");
+            int counter = int.Parse(Console.ReadLine());
+
+            //get the first number and assign it to variable largest
+            Console.Error.Write("Enter the number of units: ");
+            largest = Convert.ToInt32(Console.ReadLine());
+            //write your code here to set the first number as the max
+            //if there is only 1 number entered, then set both max and max 2 to be that number;
+            if (counter ==1 && counter !=0)
+            {
+                largest2 = largest;               
+            }
+            else if (counter >1)
+            {
+                for (int i =2; i <= counter; i++)
+                {
+                    Console.Error.Write("Enter the number of units: ");
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    //if number > max, then set max2 = max and max = number 
+                    if (num > largest)
+                    {
+                        largest2 = largest;
+                        largest = num;
+                    }
+                    //otherwise, if number <max
+                    else
+                    {
+                        largest2 = num;
+                    }
+                }
+            }
+            Console.WriteLine($"The largest number is {largest}");
+            Console.WriteLine($"The second largest number is {largest2}");
         }
     }
 }
