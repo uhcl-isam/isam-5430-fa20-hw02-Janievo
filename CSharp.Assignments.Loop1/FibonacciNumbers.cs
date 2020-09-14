@@ -25,9 +25,9 @@ namespace CSharp.Assignments.Loop1
             for (int i = 0; i <= end; i++)
             {
                 thirdnum = firstnum + secondnum;
-                Console.Error.Write($"{thirdnum} ");
                 firstnum = secondnum;
                 secondnum = thirdnum;
+                Console.Error.Write($"{thirdnum} ");
             }
 
         }
