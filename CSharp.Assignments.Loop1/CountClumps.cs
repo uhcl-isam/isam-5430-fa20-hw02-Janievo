@@ -21,19 +21,23 @@ namespace CSharp.Assignments.Loop1
             Console.Error.Write("Enter the counter:");
             int counter = Convert.ToInt32(Console.ReadLine());
             int count  = 0;
+            int prev = -1;
+            bool flag = false;
 
-            for (int i = 0; i <= counter; i ++)         
+            for ( int i =1; i <= counter; i ++)         
             {
                 Console.Error.Write("Enter the an interger: ");
                 int num = Convert.ToInt32(Console.ReadLine());
-                if (num == i)
+                if (prev == num && !flag)
                 {
-                    count = count +1;
+                    flag = true;
+                    count++;
                 }
                 else
                 {
-                    count = count + 0;
+                    flag = false;
                 }
+                prev = num;
             }
             Console.WriteLine(count);
         }
