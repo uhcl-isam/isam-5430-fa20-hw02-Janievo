@@ -168,7 +168,6 @@ namespace CSharp.Assignments.Loop1
             return "7:00";
         }
 
-
         /// <summary>
         /// Your cell phone rings.Return true if you should answer it. Normally you answer, except in the morning you only answer if it is your mom calling.In all cases, if you are asleep, you do not answer.
         /// </summary>
@@ -203,7 +202,7 @@ namespace CSharp.Assignments.Loop1
         /// <param name="number">Number.</param>
         public static bool IsHilly(int number)
         {
-            throw new NotImplementedException();
+
         }
 
         /// <summary>

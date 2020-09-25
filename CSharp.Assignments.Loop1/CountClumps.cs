@@ -18,16 +18,19 @@ namespace CSharp.Assignments.Loop1
     {
         public static void Main()
         {
-            Console.Error.Write("Enter the counter:");
-            int counter = Convert.ToInt32(Console.ReadLine());
-            int count  = 0;
+            Console.Error.Write("Enter the first interger: ");
+            string input = Console.ReadLine();
+            int count = 0;
             int prev = -1;
             bool flag = false;
 
-            for ( int i =1; i <= counter; i ++)         
+            while(true)
             {
-                Console.Error.Write("Enter the an interger: ");
-                int num = Convert.ToInt32(Console.ReadLine());
+                if (input ==null)
+                {
+                    break;
+                }
+                int num = Convert.ToInt32(input);
                 if (prev == num && !flag)
                 {
                     flag = true;

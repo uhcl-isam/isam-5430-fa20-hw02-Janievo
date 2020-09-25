@@ -17,11 +17,32 @@ namespace CSharp.Assignments.Loop1
     {
         public static void Main()
         {
-            Console.Write("Enter a nine digits interger: ");
-            int num = int.Parse(Console.ReadLine());
-
             // enter sentinel inputs
             // then check the palindrome only once.
+            int reverse = 0;
+            Console.WriteLine("Enter a number that is 9 digit long: ");
+            string input= Console.ReadLine();
+            while (input.Length > 9 || input.Length < 9)
+            {
+                Console.WriteLine("The number you entered is not 9 digits long. Please try again! : ");
+            }
+            int Temp1 = int.Parse(input);
+            int Temp2 = Temp1;
+            while (Temp1 > 0)
+            {
+                int remainder = Temp1 % 10;
+                Temp1 = Temp1 / 10;
+                reverse = reverse * 10 + remainder;
+            }
+            if (Temp2 == reverse)
+            {
+                Console.WriteLine("This is a Palindrome");
+            }
+            else
+            {
+                Console.WriteLine("This is not a Palindrome");
+            }
+            Console.ReadLine();
         }
     }
 }

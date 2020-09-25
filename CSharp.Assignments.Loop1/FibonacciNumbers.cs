@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CSharp.Assignments.Loop1
 {
@@ -17,18 +19,19 @@ namespace CSharp.Assignments.Loop1
             Console.Error.Write("Enter the last number of Fibonacci Sequence of numbers: ");
             int end = int.Parse(Console.ReadLine());
 
-            int firstnum = 0;
-            int secondnum = 1;
-            int thirdnum;
+            int first = 0;
+            int second = 1;
+            Console.Error.WriteLine(first);
+            Console.Error.WriteLine(second);
 
-            Console.Error.Write($"{firstnum} {secondnum} ");
-            for (int i = 0; i <= end; i++)
+            while (first + second <= end)
             {
-                thirdnum = firstnum + secondnum;
-                firstnum = secondnum;
-                secondnum = thirdnum;
-                Console.Error.Write($"{thirdnum} ");
+                int third = first + second;
+                first = second;
+                second = third;
+                Console.Error.WriteLine(third);
             }
+
 
         }
     }
