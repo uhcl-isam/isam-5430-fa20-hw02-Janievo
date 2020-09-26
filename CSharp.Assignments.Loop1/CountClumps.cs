@@ -18,27 +18,29 @@ namespace CSharp.Assignments.Loop1
     {
         public static void Main()
         {
-            Console.Error.Write("Enter the first interger: ");
-            string input = Console.ReadLine();
             int count = 0;
-            int prev = -1;
-            bool flag = false;
+            int prev = 0;
+            bool isclump = true;
+            int i = 0;
 
             while(true)
             {
+                Console.Error.Write("Enter the first integer: ");
+                string input = Console.ReadLine();
                 if (input ==null)
                 {
                     break;
                 }
                 int num = Convert.ToInt32(input);
-                if (prev == num && !flag)
+                if (prev == num && isclump==true)
                 {
-                    flag = true;
                     count++;
+                    isclump = false;
                 }
-                else
+                else if (i ==0)
                 {
-                    flag = false;
+                    prev = num;
+                    i++;
                 }
                 prev = num;
             }
